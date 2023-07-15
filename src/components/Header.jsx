@@ -4,7 +4,7 @@ import Profile from "../assets/Profile.jpg";
 
 const header = () => {
   return (
-    <div className=" flex items-center justify-between  my-12 border border-red-600">
+    <div className=" flex items-center justify-between my-6">
       {/* Left side */}
       <div className="text-4xl tracking-wider">Welcome, ItsMeCedy!</div>
       {/* right side */}
