@@ -17,13 +17,13 @@ const header = () => {
             placeholder="Artist, Music, Album, etc."
             className=" outline-none bg-[#3b3b3b] placeholder-[#dddddd] capitalize "
           />
-          <BsFillMicFill />
+          <BsFillMicFill className="hover:cursor-pointer" />
         </div>
         {/* profile */}
         <img
           src={Profile}
           alt="Profile"
-          className=" w-12 h-12 object-cover rounded-full"
+          className=" w-12 h-12 object-cover rounded-full cursor-pointer"
         />
       </div>
     </div>
