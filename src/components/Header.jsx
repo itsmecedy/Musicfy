@@ -1,6 +1,6 @@
 import { FiSearch } from "react-icons/fi";
 import { BsFillMicFill } from "react-icons/bs";
-import Profile from "../assets/Profile.jpg";
+import Profile from "/assets/Profile.jpg";
 
 const header = () => {
   return (

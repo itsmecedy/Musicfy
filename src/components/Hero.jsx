@@ -1,4 +1,4 @@
-import BannerImg from "../assets/BannerImg.png";
+import BannerImg from "/assets/BannerImg.png";
 import { FaCrown } from "react-icons/fa";
 
 const Hero = () => {

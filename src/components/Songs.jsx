@@ -3,23 +3,23 @@ import { BsPlayCircle } from "react-icons/bs";
 
 const images = [
   {
-    imageUrl: "../src/assets/song1.jpg",
+    imageUrl: "/assets/song1.jpg",
     songName: "Avery Davis",
   },
   {
-    imageUrl: "../src/assets/song2.jpg",
+    imageUrl: "/assets/song2.jpg",
     songName: "Cahaya Dewi",
   },
   {
-    imageUrl: "../src/assets/song3.jpg",
+    imageUrl: "/assets/song3.jpg",
     songName: "Neil Tran",
   },
   {
-    imageUrl: "../src/assets/song4.jpg",
+    imageUrl: "/assets/song4.jpg",
     songName: "Soo Jin Ae",
   },
   {
-    imageUrl: "../src/assets/song5.jpg",
+    imageUrl: "/assets/song5.jpg",
     songName: "Yael Amari",
   },
 ];
