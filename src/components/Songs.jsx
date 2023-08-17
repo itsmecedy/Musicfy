@@ -1,32 +1,49 @@
 import React from "react";
-import BannerImg from "../assets/BannerImg.png";
 import { BsPlayCircle } from "react-icons/bs";
 
-// const songs = [
-//   { id: 1, name: "Avery Davis", icon: <AiOutlineCoffee /> },
-//   { id: 2, name: "Cahawa Dewi", icon: <BiBed /> },
-//   { id: 3, name: "Neil Tran", icon: <GiWoodCabin /> },
-//   { id: 4, name: "Soo jin Ae", icon: <CiHome /> },
-//   { id: 5, name: "Yael Amari", icon: <FaUmbrellaBeach /> },
-// ];
+const images = [
+  {
+    imageUrl: "../src/assets/song1.jpg",
+    songName: "Avery Davis",
+  },
+  {
+    imageUrl: "../src/assets/song2.jpg",
+    songName: "Cahaya Dewi",
+  },
+  {
+    imageUrl: "../src/assets/song3.jpg",
+    songName: "Neil Tran",
+  },
+  {
+    imageUrl: "../src/assets/song4.jpg",
+    songName: "Soo Jin Ae",
+  },
+  {
+    imageUrl: "../src/assets/song5.jpg",
+    songName: "Yael Amari",
+  },
+];
 
 const Songs = () => {
   return (
-    <div className="flex flex-col w-auto ">
-      <div className="border w-52 ">
-        <div className=" relative w-52 h-52 border border-red-600">
-          <img className=" border rounded-3xl" src={BannerImg} alt="Image" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <BsPlayCircle className=" text-7xl" />
+    <div className=" flex justify-between">
+      {images.map((image, index) => (
+        <div key={index} className=" w-56 group">
+          <div className=" relative w-56 h-56 object-cover group-hover:scale-105 ">
+            <img
+              src={image.imageUrl}
+              alt={`Image ${index + 1}`}
+              className="  rounded-3xl w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <BsPlayCircle className=" text-7xl" />
+            </div>
           </div>
+          <p className="text-2xl mt-3 hover:text-[#f155e4]  text-center font-medium tracking-wider">
+            {image.songName}
+          </p>
         </div>
-        <p className="text-lg text-center font-bold">BannerImg</p>
-      </div>
-      {/* <div>
-        {songs.map((song) => (
-          <div>{song.name}</div>
-        ))}
-      </div> */}
+      ))}
     </div>
   );
 };

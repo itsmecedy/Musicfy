@@ -4,11 +4,11 @@ import Profile from "../assets/Profile.jpg";
 
 const header = () => {
   return (
-    <div className=" flex items-center justify-between my-6">
+    <div className=" flex items-center justify-between ">
       {/* Left side */}
       <div className="text-4xl tracking-wider">Welcome, ItsMeCedy!</div>
       {/* right side */}
-      <div className="flex items-center space-x-6 flex-wrap py-6">
+      <div className="flex items-center space-x-6 flex-wrap py-10">
         {/* search bar */}
         <div className="flex-row flex justify-center items-center bg-[#3b3b3b] space-x-5 rounded-full px-3 py-2 text-2xl ">
           <FiSearch className="hover:cursor-pointer" />
